@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+	<link rel="stylesheet" type="text/css" href="resources/css/reset.css">
+	<style type="text/css">
+	/*기본 css 및 모바일*/
+	#wrap{ display: flex; flex-flow:column; margin:0 auto;
+		 width:80%; max-width:1200px;}
+	/*헤더 영역 */
+	.header{order:1; display:flex; flex-flow:row; width:100%;}
+	.header_image{order:1;width:20%;}
+	.header_title {order:2;width:100%; padding:30px 0; text-align: center;
+		font-size:3.0em;}
+	
+	.info_section{order:2; width:100%; background-color: black; color:white;}
+	.info_list{display: flex;}
+	.info_list li{width:15%; text-align: center;}
+	.info_list li a {display:block;padding:15px 0;}
+	
+	.in_section {order:3; display:flex; flex-flow: row; }
+	.in_content{order:1; width:70%;display: flex; flex-flow: row; }
+	.in_content_img{order:1; width:25%; display:flex; flex-flow:column; margin-top: 20px; }
+	.in_content_img img{width:200px;height:200px;padding:5px;}
+	
+	.in_content_str{order:2;width:75%;display: flex; flex-flow:column;margin: 50px 100px;}
+	.in_content_str h2{font-size:2.0em;}
+	.in_content_str p{font-size:20px; margin-top:20px;}
+	
+	.in_right{order:2; width:30%; display: flex; flex-flow: column; }
+	.in_right_login{ order:1; width:100%; margin-top: 20px; }
+	.in_right_login a:link{color:blue; text-decoration: underline; }
+	.in_right_login a:visited{color:purple; }
+	
+	.in_right_login_id{width:150px; height:30px; font-size: 20px;}
+	.in_right_login_pw{width:150px; height:30px; font-size: 20px;}
+	.in_right_login_submit{width:100px; height:64px; font-size: 20px; margin-left: -25px;}
+	
+	
+	.in_right_news {order:2; width:100%; display: flex;flex-flow: column; margin-top: 100px;}
+	.in_right_news h1{width:100%; font-size: 2.0em;}
+	.in_right_news a{ color:black;}
+	.in_right_news .div{font-size: 1.0em; color:black; margin-top:30px;}
+	
+	 /*footer 영역 */
+	 .footer{ order:6; text-align:center; width:100%;}
+     .footer p{ padding: 20px; font-size: 1.5em; color:black; }
+	
+	/*PC용 CSS*/
+	@media all and (min-width:960px){
+	
+	
+	
+	}
+	
+	
+	
+	
+	</style>
+	
+</head>
+<body>
+	<div id="wrap">
+		<div class="header">
+			<img class="header_image" src="resources/images/맛집.png">	
+			<h1 class="header_title">맛집탐방 이야기^^</h1>
+		</div>
+		<section class="info_section">
+			<ul class="info_list">
+				<li><a href="">HOME</a>
+				<li><a href="">게시판</a>
+				<li><a href="">내정보</a>
+			</ul>
+		
+		</section>
+		<section class="in_section">
+			<article class="in_content">
+			<article class="in_content_img">
+				<img src="resources/images/cici33_35_lommel2003.jpg">
+				<img src="resources/images/l_aside.gif">
+			</article>
+			<article class="in_content_str">
+				<h2> < 오늘의 맛집 ></h2>
+				<br>
+				<p>오늘 방문한 곳은 맛있는 음식이 나오는 집 </p>
+				<br>
+				<p>오늘 방문한 곳은 맛있는 음식이 나오는 집 </p>
+				<br>
+				<p>오늘 방문한 곳은 맛있는 음식이 나오는 집 </p>
+			</article>
+			
+			
+			</article>
+			
+			<article class="in_right">
+				<form action="">
+				<table class="in_right_login">
+				
+				<tr>
+				 <td><input type="text" name="idf" class="in_right_login_id"></td>
+				 <td rowspan="2"><input type="submit" value="로그인" class="in_right_login_submit"></td>
+				</tr>
+				<tr>
+					<td><input type="password" name="pwf" class="in_right_login_pw"></td>
+				</tr>
+				<tr>
+					<td colspan="2"><a href="">회원 가입</a> &nbsp; / &nbsp; <a href="">ID/PW찾기</a>
+				</tr>
+				</table>
+				</form>
+				
+				<article class="in_right_news">
+				<h1>오늘의 뉴스</h1>
+				<ul class="div">
+					<li><a href="">날씨 : 32도</a></li> 
+					<li><a href="">미세먼지 : 농도 심함</a></li>
+					<li><a href="">운세 : 누구보다 좋음</a></li> 
+					
+				</ul>
+			</article>
+			
+			</article>
+		</section>
+		
+		
+		<footer class ="footer">
+		<hr width="80%" align="center" color="black">
+			<p> copyright&copy; CARE LAB</p>
+		</footer>
+		
+	</div>
+
+</body>
+</html>
